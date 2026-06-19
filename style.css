@@ -1,0 +1,245 @@
+body {
+    background-color: rgb(201, 198, 198);
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px; 
+    margin-bottom: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    color: rgb(61, 59, 59);
+}
+
+h2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: rgb(61, 59, 59);
+}
+
+h3 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: rgb(61, 59, 59);
+}
+
+h4 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: rgb(61, 59, 59);
+}
+
+.results {
+    align-items: flex;
+    justify-content: center;
+    display: flex;
+    gap: 160px;
+    margin-bottom: 20px;
+}
+
+.player-section,
+.computer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxed1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 3px solid rgb(61, 59, 59);
+    color: rgb(61, 59, 59);
+    border-radius: 12px;
+    margin-bottom: 15px;
+    width: 280px;
+    height: 280px;
+}
+
+/* HP Bar */
+.hp-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+.hp-label {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: rgb(61, 59, 59);
+    min-width: 20px;
+}
+
+.hp-bar {
+    flex: 1;
+    height: 14px;
+    background-color: rgb(170, 165, 165);
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid rgb(61, 59, 59);
+}
+
+.hp-fill {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+.player-hp {
+    background-color: rgb(76, 175, 80);
+}
+
+.computer-hp {
+    background-color: rgb(76, 175, 80);
+}
+
+.hp-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 0.75rem;
+    color: rgb(61, 59, 59);
+    min-width: 55px;
+    text-align: right;
+}
+
+.buttons_action {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons_bluff {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons_shoot {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;   
+    font-size: 16px;    
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+button:hover {
+    background-color: rgba(68, 249, 55, 0.52);
+    color: rgb(0, 0, 0);
+}
+
+#rockBtn {
+    background-color: rgb(208, 202, 202);
+}
+
+#rockBtn:hover {
+    background-color: rgba(109, 255, 99, 0.52);
+    color: rgb(0, 0, 0);
+}
+
+#rockBtn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#paperBtn {
+    background-color: rgb(208, 202, 202);
+}
+
+#paperBtn:hover {
+    background-color: rgba(109, 255, 99, 0.52);
+    color: rgb(0, 0, 0);
+}
+
+#paperBtn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#scissorBtn {
+    background-color: rgb(208, 202, 202);
+}
+
+#scissorBtn:hover {
+    background-color: rgba(109, 255, 99, 0.52);
+    color: rgb(0, 0, 0);
+}
+
+#scissorBtn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#damage2xBtn {
+    background-color: rgb(208, 202, 202);
+}
+
+#damage2xBtn:hover {
+    background-color: rgba(235, 66, 66, 0.52);
+    color: rgb(0, 0, 0);
+}
+
+#damage2xBtn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#shieldBtn {
+    background-color: rgb(208, 202, 202);
+}
+
+#shieldBtn:hover {
+    background-color: rgba(80, 189, 244, 0.52);
+    color: rgb(0, 0, 0);
+}
+
+#shieldBtn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#shootBtn {
+    background-color: rgb(208, 202, 202);
+}
+
+#shootBtn:hover {
+    background-color: rgba(237, 167, 76, 0.52);
+    color: rgb(0, 0, 0);
+}
+
+#shootBtn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

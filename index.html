@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<link rel="stylesheet" href="style.css">
+
+<h1>Rock, Paper, Scissors</h1>
+
+<div class="results">
+    <div class="player-section">
+        <div class="boxed1" id="playerChoice"> Show choice (Player) here </div>
+        <div class="hp-bar-container">
+            <span class="hp-label">HP</span>
+            <div class="hp-bar">
+                <div class="hp-fill player-hp" id="playerHpFill"></div>
+            </div>
+            <span class="hp-text" id="playerHpText">5000 / 5000</span>
+        </div>
+    </div>
+
+    <div class="computer-section">
+        <div class="boxed1" id="computerChoice"> Show choice (Computer) here </div>
+        <div class="hp-bar-container">
+            <span class="hp-label">HP</span>
+            <div class="hp-bar">
+                <div class="hp-fill computer-hp" id="computerHpFill"></div>
+            </div>
+            <span class="hp-text" id="computerHpText">5000 / 5000</span>
+        </div>
+    </div>
+</div>
+
+<h2>Make your choice:</h2>
+
+<div class="buttons_action">
+    <button id="rockBtn">Rock</button>
+    <button id="paperBtn">Paper</button>
+    <button id="scissorBtn">Scissors</button>
+</div>
+
+<h3>Add your bluff:</h3>
+
+<div class="buttons_bluff">
+    <button id="damage2xBtn">Damage x2</button>
+    <button id="shieldBtn">Shield</button>
+</div>
+
+<h4>Shoot!</h4>
+
+<div class="buttons_shoot">
+    <button id="shootBtn">Shoot!</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
